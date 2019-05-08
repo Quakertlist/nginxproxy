@@ -21,9 +21,9 @@ services:
     container_name: dotnet1
     environment:
       - VIRTUAL_PORT=80 #监听的端口
-      - VIRTUAL_HOST=dotnet1.nginx-test.com  #监听的地址
-      - LETSENCRYPT_HOST=dotnet1.nginx-test.com #证书的域名
-      - LETSENCRYPT_EMAIL=someone@simple.com #证书所有者的邮箱，快过期时会提醒
+      - VIRTUAL_HOST=node1.hepingshenghuo.com  #监听的地址
+      - LETSENCRYPT_HOST=node1.hepingshenghuo.com #证书的域名
+      - LETSENCRYPT_EMAIL=houguisang@vip.qq.com #证书所有者的邮箱，快过期时会提醒
 
   # 配置有效的节点
   dotnet2:
@@ -31,9 +31,9 @@ services:
     container_name: dotnet2
     environment:
       - VIRTUAL_PORT=80 #监听的端口
-      - VIRTUAL_HOST=dotnet2.nginx-test.com  #监听的地址
-      - LETSENCRYPT_HOST=dotnet2.nginx-test.com #证书的域名
-      - LETSENCRYPT_EMAIL=someone@simple.com #证书所有者的邮箱，快过期时会提醒
+      - VIRTUAL_HOST=node2.hepingshenghuo.com  #监听的地址
+      - LETSENCRYPT_HOST=node2.hepingshenghuo.com #证书的域名
+      - LETSENCRYPT_EMAIL=houguisang@vip.qq.com #证书所有者的邮箱，快过期时会提醒
 
 
   nginx-gen:
